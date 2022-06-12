@@ -2,6 +2,7 @@ package com.wykblog.blog.service;
 
 import com.wykblog.blog.entity.TUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.wykblog.blog.utils.RespBean;
 
 /**
  * <p>
@@ -14,4 +15,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface TUserService extends IService<TUser>  {
 
+    boolean check(String username);
+
+    void addUser(TUser tUser);
+
+    TUser login(String username, String password);
 }

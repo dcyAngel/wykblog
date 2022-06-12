@@ -5,6 +5,8 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -40,6 +42,9 @@ public class TUser implements Serializable,UserDetails {
 
     @ApiModelProperty(value = "邮箱")
     private String email;
+
+    @ApiModelProperty(value = "手机号")
+    private String telephone;
 
     @ApiModelProperty(value = "昵称")
     private String nickname;

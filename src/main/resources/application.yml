@@ -1,11 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.51.191:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
+    url: jdbc:mysql://192.168.21.129:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: dongchunyan
     password: 123456
   mvc:
     static-path-pattern: /**
+  redis:
+    host: 192.168.21.129
+    port: 6379
+    password: 123456
 
 
 mybatis-plus:
